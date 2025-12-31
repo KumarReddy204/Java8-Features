@@ -1,101 +1,143 @@
-✅ Java Streams – Coding Practice Questions
+Java Streams – Sample Input Data (Question‑wise)
+
 🔹 Level 1: Basics (Warm‑up)
-Convert a List<String> to a List<Integer> containing the length of each string
+1. Convert a List<String> to List<Integer> (length of each string)
 
-From a list of integers, filter even numbers
+List<String> words = List.of("Java", "Spring", "Boot", "Microservices");
 
-Find the count of elements greater than 50
+2. Filter even numbers from a list
 
-Convert all strings in a list to uppercase
+List<Integer> numbers = List.of(12, 7, 9, 20, 33, 40, 55);
 
-Find the first element greater than 10
+3. Count elements greater than 50
+
+List<Integer> marks = List.of(45, 60, 30, 90, 75, 20, 100);
+
+4. Convert all strings to uppercase
+
+List<String> technologies = List.of("java", "spring", "docker", "kubernetes");
+
+5. Find the first element greater than 10
+
+List<Integer> values = List.of(3, 5, 8, 12, 15, 20);
 
 🔹 Level 2: Intermediate (Most asked)
-Find the sum of all numbers from a list of integers
+6. Find sum of all numbers
 
-From a list of strings, remove duplicates
+List<Integer> expenses = List.of(100, 200, 300, 400);
 
-Find the maximum and minimum number from a list
+7. Remove duplicates from list of strings
 
-Sort a list of integers:
+List<String> languages = List.of("Java", "Python", "Java", "C", "Python", "Go");
 
-Ascending order
+8. Find maximum and minimum number
 
-Descending order
+List<Integer> primeNumbers = List.of(2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13);
 
-From a list of numbers, skip first 2 and limit next 3 elements
+9. Sort integers (asc & desc)
 
-🔹 Level 3: map() vs flatMap()
-Convert List<List<Integer>> into a single List<Integer>
+List<Integer> unsortedNumbers = List.of(45, 12, 89, 23, 7, 90, 34);
 
-From a list of sentences, extract all unique words
+10. Skip first 2 and limit next 3 elements
 
-Convert List<String> to a flattened List<Character>
+List<Integer> sequence = List.of(10, 20, 30, 40, 50, 60, 70);
+
+🔹 Level 3: map() vs flatMap()
+11. Convert List<List<Integer>> into single list
+
+List<List<Integer>> nestedList = List.of( List.of(1, 2, 3), List.of(4, 5), List.of(6, 7, 8) );
+
+12. Extract all unique words from sentences
+
+List<String> sentences = List.of( "java is powerful", "streams are powerful", "java streams simplify code" );
+
+13. Convert List<String> to flattened List<Character>
+
+List<String> names = List.of("Ram", "Sam", "Tom");
 
 🔹 Level 4: Matching & Finding
-Check if any number is divisible by 5
+14. Check if any number divisible by 5
 
-Check if all numbers are positive
+List<Integer> checkNumbers = List.of(11, 22, 33, 40, 55);
 
-Check if none of the numbers are negative
+15. Check if all numbers are positive
 
-Find any element greater than 100
+List<Integer> positives = List.of(5, 10, 20, 30);
+
+16. Check if none of the numbers are negative
+
+List<Integer> nonNegative = List.of(0, 4, 6, 9, 12);
+
+17. Find any element greater than 100
+
+List<Integer> bigNumbers = List.of(10, 20, 50, 150, 200);
 
 🔹 Level 5: Reduce (Very Important)
-Find the product of all numbers using reduce()
+18. Product of all numbers
 
-Find the maximum number using reduce()
+List<Integer> multiplyNumbers = List.of(1, 2, 3, 4, 5);
 
-Concatenate a list of strings using reduce()
+19. Maximum number using reduce()
 
-🔹 Level 6: Collectors (Most common in interviews)
-Convert a list of strings to a Set
+List<Integer> salaryFigures = List.of(45000, 60000, 75000, 90000);
 
-Group numbers by even and odd
+20. Concatenate list of strings
 
-Group employees by department
+List<String> alphabets = List.of("J", "A", "V", "A");
 
-Count the number of employees in each department
+🔹 Level 6: Collectors
+21. Convert list of strings to Set
 
-Find the average salary of employees
+List<String> cities = List.of("Hyderabad", "Bangalore", "Hyderabad", "Chennai");
 
-🔹 Level 7: Real‑World Employee Problems ⭐⭐⭐
-Assume:
+22. Group numbers by even and odd
 
-class Employee {
-    int id;
-    String name;
-    String dept;
-    double salary;
-}
-Find the highest paid employee
+List<Integer> evenOddNumbers = List.of(1, 2, 3, 4, 5, 6, 7, 8);
 
-Find employees whose salary > 50,000
+Employee data (used for multiple questions)
 
-Group employees by department
+class Employee { int id; String name; String dept; double salary; Employee(int id, String name, String dept, double salary) { this.id = id; this.name = name; this.dept = dept; this.salary = salary; } }
 
-Find the department with the highest average salary
-
-Sort employees by salary (descending order)
+List<Employee> employees = List.of( new Employee(1, "Kumar", "IT", 75000), new Employee(2, "Ravi", "HR", 45000), new Employee(3, "Anita", "IT", 90000), new Employee(4, "John", "Finance", 80000), new Employee(5, "Priya", "HR", 60000), new Employee(6, "David", "Finance", 120000) );
 
 🔹 Level 8: String‑based Problems
-Find the frequency of each character in a string
+31.Frequency of each character
 
-Find the first non‑repeating character
+String input = "java streams";
 
-Count the number of words in a sentence
+32. First non‑repeating character
 
-Find duplicate characters in a string
+String value = "swiss";
+
+33. Count number of words
+
+String sentence = "Java streams simplify data processing";
+
+34. Find duplicate characters
+
+String duplicateInput = "programming";
 
 🔹 Level 9: Tricky / Advanced
-Find the second highest number in a list
+35. Second highest number
 
-Find the longest string in a list
+List<Integer> scores = List.of(10, 20, 30, 40, 50);
 
-Partition numbers into prime and non‑prime
+36. Longest string
 
-Convert a stream to a Map<K, V>
+List<String> frameworks = List.of("Spring", "Hibernate", "Microservices", "JPA");
 
-Handle an empty stream safely using Optional
+37. Partition prime & non‑prime
 
-Use peek() to debug a stream pipeline
+List<Integer> numbersForPrimeCheck = List.of(2, 3, 4, 5, 6, 7, 8, 9, 10, 11);
+
+38. Convert stream to Map
+
+List<String> countryCodes = List.of("IN", "US", "UK");
+
+39. Handle empty stream safely
+
+List<Integer> emptyList = List.of();
+
+40. Use peek() to debug
+
+List<Integer> debugNumbers = List.of(10, 15, 20, 25, 30);
